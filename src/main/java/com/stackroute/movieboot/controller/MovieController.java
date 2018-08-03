@@ -96,11 +96,11 @@ public class MovieController {
 		return new ResponseEntity<Movie>(movie, HttpStatus.OK);
 
 	}
-	@RequestMapping(value = "/bychar/movie", method = RequestMethod.GET, produces = { "application/json" })
-	public ResponseEntity<?> getNoteByYear(@RequestParam("term") String searchTerm) {
-		List<Movie> movie =movieservice.getByMovieAlpha(searchTerm);
-		return new ResponseEntity<List<Movie>>(movie, HttpStatus.OK);
-
-	}
-	
+//	@RequestMapping(value = "/bychar/movie", method = RequestMethod.GET, produces = { "application/json" })
+//	public ResponseEntity<?> getNoteByYear(@RequestParam("term") String searchTerm) {
+//		List<Movie> movie =movieservice.getByMovieAlpha(searchTerm);
+//		return new ResponseEntity<List<Movie>>(movie, HttpStatus.OK);
+//
+//	}
+//	
 }

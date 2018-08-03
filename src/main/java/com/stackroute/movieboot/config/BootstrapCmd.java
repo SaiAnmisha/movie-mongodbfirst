@@ -16,25 +16,15 @@ public class BootstrapCmd implements CommandLineRunner {
 		super();
 		this.movieRepository = movieRepository;
 	}
-
-
-
-
-
-
-	
-	  
-
-
-
-
 		@Override
 		public void run(String... args) throws Exception {
 			 Movie movie = new Movie();
+			 movie.setMovieId(1);
 		        movie.setMovieTitle("solo");
 		        movieRepository.save(movie);
 		        Movie testMovie = Movie.builder()
 		                .movieTitle("foo")
+		                .movieId(2)
 		                .build();
 		        movieRepository.save(testMovie);// TODO Auto-generated method stub
 			

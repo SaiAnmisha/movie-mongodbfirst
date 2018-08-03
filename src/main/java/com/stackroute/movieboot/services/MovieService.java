@@ -19,5 +19,5 @@ public Movie getbyTitle(String movieTitle);
 public Movie getbyRating(int movieRating);
 
 public Movie getbyYear(int releaseYear);
-public List<Movie> getByMovieAlpha(String searchTerm);
+//public List<Movie> getByMovieAlpha(String searchTerm);
 }
